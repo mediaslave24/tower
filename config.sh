@@ -1,0 +1,9 @@
+#!/bin/bash
+__hostnames=(
+  michael-R25S
+  ololo
+)
+__dotfiles=(
+  ~/.vimrc,
+  ~/.irbrc
+)
