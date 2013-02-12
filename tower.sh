@@ -3,6 +3,7 @@
 #Configuration
 ######
 config_file=config.sh
+__editor=vim
 ######
 
 #Initialization
@@ -22,5 +23,5 @@ __source_silently() {
 __source_silently $( __get_file_by_hostname_from aliases )
 __source_silently aliases.sh
 
-alias gl_a='\vim aliases.sh'
-alias l_a="\vim $(__get_file_by_hostname_from aliases)"
+alias gl_a="\$__editor aliases.sh"
+alias l_a="\$__editor $(__get_file_by_hostname_from aliases)"
