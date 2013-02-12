@@ -1,19 +1,17 @@
 #!/bin/bash
-
 #Configuration
 ######
 config_file=config.sh
 __editor=vim
 ######
-
 #Initialization
 ####################################
+__t_dir=$(cd "$( dirname "${BASH_SOURCE}[0]" )" && pwd)
 
 __get_file_by_hostname_from() {
   local dir=$1
-  local root=$(cd "$( dirname "${BASH_SOURCE}[0]" )" && pwd)
   file=$(hostname).sh
-  echo $root/$dir/$file
+  echo $__t_dir/$dir/$file
 }
 
 __source_silently() {
@@ -21,7 +19,6 @@ __source_silently() {
 }
 
 __source_silently $( __get_file_by_hostname_from aliases )
-__source_silently aliases.sh
-
-alias gl_a="\$__editor aliases.sh"
+__source_silently $__t_dir/aliases.sh
+alias gl_a="\$__editor $__t_dir/aliases.sh"
 alias l_a="\$__editor $(__get_file_by_hostname_from aliases)"
