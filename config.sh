@@ -2,4 +2,5 @@
 __dotfiles=(
   ~/.vimrc
   ~/.irbrc
+  ~/.gitconfig
 )
