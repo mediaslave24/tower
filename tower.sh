@@ -28,7 +28,15 @@ __source_silently $__t_dir/$config_file
 
 export_dotfiles() {
   for df in ${__dotfiles[@]}; do
-    [[ -f $df ]] && cp $df $__t_dir/$__dotfiles_dir/$(basename $df)
+    local t=$__t_dir/$__dotfiles_dir/$(basename $df)
+    [[ -f $df ]] && cp $df $t
+  done
+}
+
+import_dotfiles() {
+  for df in ${__dotfiles[@]}; do
+    local t=$__t_dir/$__dotfiles_dir/$(basename $df)
+    [[ -f $t ]] && cp $t $df
   done
 }
 

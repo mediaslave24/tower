@@ -1,0 +1,16 @@
+[alias]
+	lg = log --graph
+	br = branch
+	co = checkout
+	cm = commit
+	st = status
+	sth = stash
+	stp = stash pop
+	stk = stash --keep-index
+[color]
+	ui = true
+[user]
+	name = Michael
+	email = mmaccoffe@gmail.com
+[core]
+	editor = vim

@@ -1,4 +1,3 @@
-
 " An example for a vimrc file.
 "
 " Maintainer:	Bram Moolenaar <Bram@vim.org>
@@ -9,7 +8,6 @@
 "	      for Amiga:  s:.vimrc
 "  for MS-DOS and Win32:  $VIM\_vimrc
 "	    for OpenVMS:  sys$login:.vimrc
-
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
   finish
@@ -136,11 +134,6 @@ inoremap <leader>; <C-O>:s/\([^;\s]\)\s*$/\1;/<CR><End>
 nnoremap <silent><C-W>` :NERDTreeFind<CR>
 
 nnoremap <F2> :noh<CR>
-
-" nnoremap ; :
-" nnoremap : ;
-" vnoremap ; :
-" vnoremap : ;
 
 let g:proj_flags='istg'
 
