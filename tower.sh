@@ -7,6 +7,7 @@ __editor=vim
 #Initialization
 ####################################
 __t_dir=$(cd "$( dirname "${BASH_SOURCE}[0]" )" && pwd)
+
 __get_file_by_hostname_from() {
   local dir=$1
   file=$(hostname).sh
