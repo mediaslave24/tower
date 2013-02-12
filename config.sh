@@ -1,5 +1,5 @@
 #!/bin/bash
 __dotfiles=(
-  ~/.vimrc,
+  ~/.vimrc
   ~/.irbrc
 )
