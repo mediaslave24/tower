@@ -1,16 +1,33 @@
-[alias]
-	lg = log --graph
-	br = branch
-	co = checkout
-	cm = commit
-	st = status
-	sth = stash
-	stp = stash pop
-	stk = stash --keep-index
 [color]
 	ui = true
+[alias]
+	lo    = log --oneline
+	lg    = log --graph
+	co    = checkout
+	cm    = commit 
+        cmm   = commit -m 
+	st    = status
+	br    = branch
+	sth   = stash
+	stk   = stash --keep-index
+	stp   = stash pop
+	stl   = stash list
+        sts   = stash show
+        stsp  = stash show -p
+	mgs   = merge --squash
+	rh    = reset HEAD
+	ai    = add -i
+	d     = diff
+        dc    = diff --cached
+        dt    = difftool
+        dtc   = difftool --cached
+        ap    = add -p
 [user]
 	name = Michael
 	email = mmaccoffe@gmail.com
 [core]
 	editor = vim
+[merge]
+	tool = vimdiff
+[mergetool]
+	keepBackup = false
