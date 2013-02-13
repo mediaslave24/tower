@@ -137,11 +137,6 @@ nnoremap <silent><C-W>` :NERDTreeFind<CR>
 
 nnoremap <F2> :noh<CR>
 
-" nnoremap ; :
-" nnoremap : ;
-" vnoremap ; :
-" vnoremap : ;
-
 let g:proj_flags='istg'
 
 function! SyntaxItem()
