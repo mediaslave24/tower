@@ -144,3 +144,6 @@ function! SyntaxItem()
 endfunction
 
 set encoding=utf-8
+
+iabbrev ### ##############################
+iabbrev ret return

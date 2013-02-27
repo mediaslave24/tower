@@ -1,11 +1,11 @@
-def load_if_exists(file)
-  load file if File.exists?(file)
+def irbrc
+  load(File.expand_path(__FILE__))
 end
 
-def aecard?
-  ENV['RAILS_ENV'] == 'development' && ENV['PWD'] == '/home/michael/rails-projects/artistecard'
-end
-
-if aecard?
-  load_if_exists("#{ENV['PWD']}/lib/irbrc")
+unless Dir::pwd == File.expand_path('~')
+  irbrc = File.expand_path('.irbrc')
+  if File.exists?(irbrc)
+    puts "Loading #{irbrc}"
+    load irbrc 
+  end
 end
