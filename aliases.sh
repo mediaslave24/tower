@@ -1,8 +1,11 @@
 alias v=vim
 alias g=git
+alias b=bundle
+alias r=ruby
 alias gs='git status'
 alias gd='git diff'
 alias gc='git commit'
 alias gmgt='git mergetool'
 alias b='bundle'
 alias reload_tower='. ~/.tower/tower.sh'
+alias home='cd ~'

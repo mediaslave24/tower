@@ -50,3 +50,13 @@ push_tower() {
   git push
   cd $cur_dir
 }
+
+pull_tower() {
+  local cur_dir=pwd
+  cd $__t_dir
+  git pull
+  cd $cur_dir
+}
+cdt() {
+  cd $__t_dir
+}

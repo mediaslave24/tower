@@ -1,15 +1,3 @@
-
-" An example for a vimrc file.
-"
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2011 Apr 15
-"
-" To use it, copy it to
-"     for Unix and OS/2:  ~/.vimrc
-"	      for Amiga:  s:.vimrc
-"  for MS-DOS and Win32:  $VIM\_vimrc
-"	    for OpenVMS:  sys$login:.vimrc
-
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
   finish
@@ -22,15 +10,23 @@ set nocompatible
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-if has("vms")
-  set nobackup		" do not keep a backup file, use versions instead
-else
-  set backup		" keep a backup file
-endif
-set history=50		" keep 50 lines of command line history
-set ruler		" show the cursor position all the time
-set showcmd		" display incomplete commands
-set incsearch		" do incremental searching
+set history=50		  " keep 50 lines of command line history
+set ruler		  " show the cursor position all the time
+set showcmd		  " display incomplete commands
+set incsearch		  " do incremental searching
+set smartcase		  " Override the 'ignorecase' option if the search pattern contains upper case characters
+set foldmethod=manual     " Folds are created manually 
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+set clipboard=unnamedplus
+set number
+set nowrap
+set backupdir=~/tmp
+
+set keymap=russian-jcukenwin
+set iminsert=0
+set imsearch=0
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
@@ -102,19 +98,6 @@ filetype plugin indent on
 
 colorscheme distinguished	
 
-set ignorecase smartcase
-set foldmethod=manual
-set expandtab
-set shiftwidth=2
-set softtabstop=2
-set clipboard=unnamedplus
-set number
-set nowrap
-set backupdir=~/tmp
-
-set keymap=russian-jcukenwin
-set iminsert=0
-set imsearch=0
 highlight lCursor guifg=NONE guibg=Cyan
 highlight Search ctermbg=Black
 
