@@ -13,3 +13,5 @@ alias     lb='cd ~/rails-projects/lit_bed'
 alias     lr='cd /home/michael/rails-projects/lit-bed-rails'
 
 alias     workdata='vim /home/michael/.work-data'
+
+alias     ng='cd ~/nginx'
