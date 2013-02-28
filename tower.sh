@@ -57,6 +57,15 @@ pull_tower() {
   git pull
   cd $cur_dir
 }
+
 cdt() {
   cd $__t_dir
+}
+
+open_dotfiles() {
+  vim -p ${__dotfiles[@]}  
+}
+
+retower() {
+  . ${BASH_SOURCE[0]}
 }
