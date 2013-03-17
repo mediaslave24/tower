@@ -1,6 +1,7 @@
 #Shortcuts for Rails2
 alias     r2s='./script/server'
 alias     r2c='./script/console'
+alias     ur='unicorn_rails -p 3000'
 
 # Folders
 alias    down='cd ~/Downloads'
@@ -17,3 +18,7 @@ alias       hf='cd /home/michael/Work/html5-bp-projects/first'
 alias       wp='cd /home/michael/Work/web-projects'
 alias       lb='cd /home/michael/Work/web-projects/lit_bed'
 alias       lr='cd /home/michael/Work/rails-projects/lid-bed'
+alias       mydata='vim ~/Dropbox/my-data'
+
+alias       lt='cd ~/Work/rails-projects/training-apps'
+alias       cdc='cd ~/Work/c'

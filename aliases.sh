@@ -1,4 +1,4 @@
-alias v=vim
+alias v="vim -g"
 alias g=git
 alias b=bundle
 alias r=ruby

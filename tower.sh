@@ -2,7 +2,7 @@
 #Configuration
 ######
 config_file=config.sh
-__editor=vim
+__editor='vim -g'
 ######
 #Initialization
 ####################################
